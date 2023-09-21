@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./utility.css">
+
+    <title>University centre of Bio-informatics</title>
+</head>
+
+<body>
+    <!-- =============================================
+                      HEADER START
+    =============================================== -->
+    <header class="header">
+        <div class="container home">
+            <div class="logo">
+                <a href="#"><img src="./img/logo_1.jpg" alt="logo">UCB</a>
+            </div>
+            <div class="menu-overlay"></div>
+            <nav class="navbar">
+                <button class="close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="outer-link" href="#">Home</a></li>
+                    <li class="menu-item down-menu">
+                        <a class="outer-link" data-toggle="sub-menu" href="#">
+                            Admission
+                            <ion-icon class="down-arow" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="sub-menu admis">
+                            <li class="inner-link">
+                                <a href="./login.html">Student login</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Admin login</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Collage login</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Application & Regis..</a>
+                        </ul>
+
+                    </li>
+                    <li class="menu-item"><a class="outer-link" href="#">Gallery</a></li>
+                    <li class="menu-item down-menu">
+                        <a class="outer-link" data-toggle="sub-menu" href="#">
+                            Examination
+                            <ion-icon class="down-arow" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="inner-link">
+                                <a href="#">Exam Notification</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Rule & Regulation</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Result</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item down-menu">
+                        <a class="outer-link" data-toggle="sub-menu" href="#">
+                            News & event
+                            <ion-icon class="down-arow" name="chevron-down-outline"></ion-icon>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="inner-link">
+                                <a href="#">Notification</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">News & Update</a>
+                            </li>
+                            <li class="inner-link">
+                                <a href="#">Time Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- <div class="menu-overlay"></div> -->
+                </ul>
+            </nav>
+            <div class="btn-ham">
+                <a href="./Contactus.html" class="btn-link">
+                    <button class="btn">Contact Us</button>
+                </a>
+                <button class="hamburger">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="opacity show"></div>
+    </header>
+    <!-- =============================================
+                      HEADER END
+    =============================================== -->
+
+
+    <!-- =============================================
+                      HERO SECTION START
+    =============================================== -->
+    <section class="hero-section">
+        <div class="container hero-cant">
+
+            <div class="left-side">
+                <h4 class="mini-title">welcome to!</h4>
+
+                <h1 class="big-title">University center of <span class="big-h-t">Bio-informatics.</span></h1>
+
+                <p class="hero-para">Bio-informatics Division of Department of Biotechnology, Ministry of Science &
+                    Technology, Govt. of India has undertaken a very optimistic</p>
+
+                <div class="hero-btn">
+                    <a href="./Contactus.html" class="btn-link btns">
+                        <button class="btn">
+                            Get started
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="slider">
+                    <div class="item-list">
+                        <div class="item">
+                            <img src="./img/Department.jpg" alt="img">
+                        </div>
+                        <div class="item">
+                            <img src="./img/Depart img.jpg" alt="img">
+                        </div>
+                        <div class="item">
+                            <img src="./img/Department.jpg" alt="img">
+                        </div>
+                        <div class="item">
+                            <img src="./img/Depart img.jpg" alt="img">
+                        </div>
+                        <div class="item">
+                            <img src="./img/Department.jpg" alt="img">
+                        </div>
+                    </div>
+
+                    <div class="crousel-btn">
+                        <button id="prev">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <button id="next">
+                            <ion-icon name="chevron-forward-outline"></ion-icon> 
+                        </button>
+                    </div>
+
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ========= BG COLOR ========= -->
+        <span class="bg-red"></span>
+        <span class="bg-purpal"></span>
+        <span class="bg-cyan"></span>
+
+
+
+    </section>
+    <!-- =============================================
+                      HERO SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                    BANNER SECTION START
+    =============================================== -->
+    <section class="banner-section">
+        <div class="container banner-cant">
+            <div class="faculty">
+                <img src="./img/faculty.png" alt="faculty img">
+                <div class="banner-text">
+                    <h4>faculty</h4>
+                    <p>department</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./img/time-table.png" alt="time-table img">
+                <div class="banner-text">
+                    <h4>time-table</h4>
+                    <p>all cources</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./img/university.png" alt="University img">
+                <div class="banner-text">
+                    <h4>University</h4>
+                    <p>department</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./img/syllabus.png" alt="faculty">
+                <div class="banner-text">
+                    <h4>syllabus</h4>
+                    <p>all cources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================================
+                    BANNER SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                      ABOUT SECTION START
+    =============================================== -->
+    <section class="about-section">
+        <div class="container about-cant">
+            <div class="left-about">
+                <h2>about <span>us</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde magnam minima a maiores
+                    dicta modi, animi quas, qui quidem vel rem deleniti! Iusto asperiores ullam qui modi nisi enim
+                    perspiciatis quia, soluta sit?</p>
+                <div class="social-media">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+                <div class="about-btn">
+                    <a href="#" class="btn-link">
+                        <button class="btn">Read More</button>
+                    </a>
+                    <a href="#" class="btn-link btns">
+                        <button class="btn">
+                            Get started
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-about">
+                <img src="./img/Department.jpg" alt="about img">
+            </div>
+        </div>
+        <!-- ========= BG COLOR ========= -->
+        <span class="about-bg-red"></span>
+        <span class="about-bg-purpal"></span>
+        <span class="about-bg-cyan"></span>
+    </section>
+    <!-- =============================================
+                      ABOUT SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                MEET OUT TEACHER SECTION START
+    =============================================== -->
+    <section class="teacher-section">
+        <div class="container teacher-cant">
+            <h2 class="teacher-heading">meet our <span>teacher</span></h2>
+            <div class="main-teacher">
+                <div class="director">
+                    <div class="director-img">
+                        <img src="./img/director sir.jpg" alt="directo-img">
+                    </div>
+                    <div class="director-info">
+                        <h3>Prof Chnadra Bhanu Singh</h3>
+                        <span class="post">director</span>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum eos nobis dolor
+                            deleniti vitae, cum asperiores nihil eaque reprehenderit! Nihil, sapiente! Quia, delectus
+                            fuga eos repudiandae repellendus illum amet doloremque eius rem, pariatur adipisci?</p>
+
+                        <div class="social-media">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </div>
+
+                        <a href="#" class="btn-link">
+                            <button class="btn">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="director">
+                    <div class="director-img">
+                        <img src="./img/co-ordinator.jpg" alt="directo-img">
+                    </div>
+                    <div class="director-info">
+                        <h3>dr rakesh ranjan</h3>
+                        <span class="post">Co-ordinator</span>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum eos nobis dolor
+                            deleniti vitae, cum asperiores nihil eaque reprehenderit! Nihil, sapiente! Quia, delectus
+                            fuga eos repudiandae repellendus illum amet doloremque eius rem, pariatur adipisci?</p>
+
+                        <div class="social-media">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </div>
+
+                        <a href="#" class="btn-link">
+                            <button class="btn">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="director">
+                    <div class="director-img">
+                        <img src="./img/sora mam.jpg" alt="directo-img">
+                    </div>
+                    <div class="director-info">
+                        <h3>Dr. Sora Shimazaki</h3>
+                        <span class="post">director</span>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores harum eos nobis dolor
+                            deleniti vitae, cum asperiores nihil eaque reprehenderit! Nihil, sapiente! Quia, delectus
+                            fuga eos repudiandae repellendus illum amet doloremque eius rem, pariatur adipisci?</p>
+
+                        <div class="social-media">
+                            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        </div>
+
+                        <a href="#" class="btn-link">
+                            <button class="btn">read more</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- BG COLOR DESIGN -->
+                <span class="teacher-bg-purpal"></span>
+                <span class="teacher-bg-red"></span>
+                <span class="teacher-bg-cyan"></span>
+            </div>
+            <div class="guest-faculty">
+                <div class="guest-f-teach">
+                    <div class="teach-img">
+                        <img src="./img/arun sir.jpg" alt="sir-img">
+                    </div>
+                    <h4 class="name-title">aarun sir</h4>
+                    <span class="teach-bio">management</span>
+                    <div class="social-media">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="guest-f-teach">
+                    <div class="teach-img">
+                        <img src="./img/parnav sir.jpg" alt="sir-img">
+                    </div>
+                    <h4 class="name-title">Parnav sir</h4>
+                    <span class="teach-bio">Math & Programming</span>
+                    <div class="social-media">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="guest-f-teach">
+                    <div class="teach-img">
+                        <img src="./img/tarik sir.jpg" alt="sir-img">
+                    </div>
+                    <h4 class="name-title">Md Tarik sir</h4>
+                    <span class="teach-bio">Data Structure</span>
+                    <div class="social-media">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="guest-f-teach">
+                    <div class="teach-img">
+                        <img src="./img/scr sir.jpg" alt="sir-img">
+                    </div>
+                    <h4 class="name-title">SCR sir</h4>
+                    <span class="teach-bio">Computer Architecture</span>
+                    <div class="social-media">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    </div>
+                </div>
+                 <!-- BG COLOR DESIGN -->
+                 <span class="guest-bg-purpal"></span>
+                 <span class="guest-bg-red"></span>
+                 <span class="guest-bg-cyan"></span>
+            </div>
+        </div>
+    </section>
+    <!-- =============================================
+                MEET OUT TEACHER SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                    COURCE SECTION START
+    =============================================== -->
+    <section class="cource-section">
+        <div class="container cource-cant">
+            <h2 class="cource-heading">our popular <span>cource</span></h2>
+            <div class="all-cource">
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/BCA Coursee.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">Bachelor of Computer Application (BCA)</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹49,000/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                06 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                60 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/PGDCA Course.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">Post Graduate Diploma in Computer Application</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹21,000/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                02 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                25 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/Certificate Course.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">Certificate Course in Bioinformatics (CCIB)</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹8,300/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                01 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                35 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/PGDB Course.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">Post Graduate Diploma in Bioinformatics</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹10,300/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                02 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                35 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/bca prj img.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">BCA (bachelor of computer Application)</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹49,000/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                06 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                60 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cource-box">
+                    <div class="cource-img">
+                        <img src="./img/PGDCA Course.jpg" alt="cource-img">
+                    </div>
+                    <div class="cource-details">
+                        <h4 class="cource-name"><a href="#">BCA (bachelor of computer Application)</a></h4>
+                        <div class="cource-rating">
+                            <div class="cource-star">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-half-outline"></ion-icon>
+                            </div>
+                            <span class="rating-count">(4.5/9 rating)</span>
+                        </div>
+                        <span class="cource-price">₹49,000/-</span>
+                        <div class="duration-seat">
+                            <span class="cource-sem">
+                                <ion-icon name="calendar-outline"></ion-icon>
+                                06 semester
+                            </span>
+                            <span class="cource-seat">
+                                <ion-icon name="people-outline"></ion-icon>
+                                60 Student
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BG COLOR DESIGN -->
+            <span class="cource-bg-purpal"></span>
+            <span class="cource-bg-red"></span>
+            <span class="cource-bg-cyan"></span>
+        </div>
+    </section>
+    <!-- =============================================
+                      COURCE SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                    APPLY KNOW SECTION START
+    =============================================== -->
+    <section class="apply-section">
+        <div class="container apply-cant">
+            <span class="small-para">Want to know more about Centre of Bio-informatic?</span>
+            <h3>Ready to Start your exciting Journey?</h3>
+            <span class="mid-para">Registration process for academic year 2022-23 is open now</span>
+            <a href="#" class="btn-link">
+                <button class="btn">Apply Know</button>
+            </a>
+        </div>
+        <span class="bg-blur-color"></span>
+        <span class="bg-blur-color cyan"></span>
+    </section>
+    <!-- =============================================
+                    APPLY KNOW SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                    GALLERY SECTION START
+    =============================================== -->
+    <section class="gallery-section">
+        <div class="container gallery-cant">
+            <div class="info-gallery">
+                <h2 class="gallery-heading">our <span>gallery</span></h2>
+                <p>Seeing is believing. Believing is comprehension. And comprehension
+                    becomes reality when it becomes functional. August 16, 2016,
+                    visualized the concept of Munger University.
+                </p>
+                <div class="gallery-tag">
+                    <a href="#">campush</a>
+                    <a href="#">farewall</a>
+                    <a href="#">festival</a>
+                    <a href="#">fresher</a>
+                </div>
+                <div class="gallery-btn">
+                    <a href="#" class="btn-link">
+                        <button class="btn">View More</button>
+                    </a>
+                    <a href="#" class="btn-link btns">
+                        <button class="btn">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img src="./img/ak minis...jpg" alt="img">
+                <img src="./img/gallery2.jpg" alt="img">
+                <img src="./img/ak minis...jpg" alt="img">
+                <img src="./img/gallery3.jpg" alt="img">
+                <img src="./img/Department.jpg" alt="img">
+                <img src="./img/Department.jpg" alt="img">
+            </div>
+        </div>
+    </section>
+    <!-- =============================================
+                    GALLERY SECTION END
+    =============================================== -->
+
+
+
+    <!-- =============================================
+                    REVIEW SECTION START
+    =============================================== -->
+    <section class="review-section">
+        <div class="container review-cant">
+            <div class="review-heading">
+                <h2>WHAT DO STUDENT SAY ABOUT <span>BIO-INFORMATICS?</span></h2>
+            </div>
+            <div class="review-student">
+                <div class="review-left">
+                    <div class="review-slide">
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/ak minis...jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">amardeep kr</span>
+                                    <span class="stu-bio">frontend developer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                The most challenging thing in my design process is finding the right icons. As a
+                                designer, finding suitable icons takes a lot of time, and most time, you can not modify
+                                downloaded icons. That is a fact. That's why I recently started using Iconly Pro, I
+                                believe, so far this is the best icon resource. In a few words, Super simple, beautiful
+                                and elegant icons and also very easy to modify.
+                            </p>
+                        </div>
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/Sumit kumar.jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">sumit kumar</span>
+                                    <span class="stu-bio">backend developer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                I still use Iconly till date. I love creating icons myself but when I’m stuck, Iconly
+                                becomes my go to app!
+                            </p>
+                        </div>
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/bro-sis.jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">amresh kr</span>
+                                    <span class="stu-bio">ui designer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                The most challenging thing in my design process is finding the right icons. As a
+                                designer, finding suitable icons takes a lot of time, and most time, you can not modify
+                                downloaded icons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-left review-right">
+                    <div class="review-slide slide-2">
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/ak minis...jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">amardeep kr</span>
+                                    <span class="stu-bio">frontend developer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                The most challenging thing in my design process is finding the right icons. As a
+                                designer, finding suitable icons takes a lot of time, and most time, you can not modify
+                                downloaded icons. That is a fact. That's why I recently started using Iconly Pro, I
+                                believe, so far this is the best icon resource. In a few words, Super simple, beautiful
+                                and elegant icons and also very easy to modify.
+                            </p>
+                        </div>
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/Sumit kumar.jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">sumit kumar</span>
+                                    <span class="stu-bio">backend developer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                I still use Iconly till date. I love creating icons myself but when I’m stuck, Iconly
+                                becomes my go to app!
+                            </p>
+                        </div>
+                        <div class="review-box">
+                            <div class="stu-profile">
+                                <div class="review-img">
+                                    <img src="./img/bro-sis.jpg" alt="stu-img">
+                                </div>
+                                <div class="review-info">
+                                    <span class="stu-name">amresh kr</span>
+                                    <span class="stu-bio">ui designer</span>
+                                </div>
+                            </div>
+                            <p class="stu-comment">
+                                The most challenging thing in my design process is finding the right icons. As a
+                                designer, finding suitable icons takes a lot of time, and most time, you can not modify
+                                downloaded icons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BG COLOR DESIGN -->
+            <span class="review-bg-purpal"></span>
+            <span class="review-bg-red"></span>
+            <span class="review-bg-cyan"></span>
+        </div>
+    </section>
+    <!-- =============================================
+                      REVIEW SECTION END
+    =============================================== -->
+
+
+    <!-- =============================================
+                    FOOTER SECTION START
+    =============================================== -->
+    <footer class="footer">
+        <div class="container footer-cant">
+            <div class="footer-nav">
+            <div class="web-info">
+                <div class="footer-logo">
+                    <img src="./img/logo_1.jpg" alt="logo">
+                    <span class="logo-name">bio-informatics</span>
+                </div>
+                <p class="web-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus tempore doloribus in, nobis
+                    natus eligendi magnam maiores eaque odio cupiditate iure!
+                </p>
+                <div class="social-media">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-link-info">
+                <h4>quick link</h4>
+                <ul class="footer-item">
+                    <li class="footer-list"><a href="#">home</a></li>
+                    <li class="footer-list"><a href="#">about us</a></li>
+                    <li class="footer-list"><a href="#">cources</a></li>
+                    <li class="footer-list"><a href="#">admission</a></li>
+                    <li class="footer-list"><a href="#">news & events</a></li>
+                </ul>
+            </div>
+            <div class="footer-link-info">
+                <h4>contact info</h4>
+                <ul class="footer-item">
+                    <li class="footer-list">
+                        <a href="#">
+                            <ion-icon name="call"></ion-icon>
+                            +91 123 334 0000
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">
+                            <ion-icon name="call"></ion-icon>
+                            +91 123 334 0000
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">
+                            <ion-icon name="location"></ion-icon>
+                            Tilka Manjhi Bhagalpur University Bhagalpur, Bihar, PIN-812007
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a href="#">
+                            <ion-icon name="mail"></ion-icon>
+                            registrartmbu07@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-letter">
+                <h4>newsLetter</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptates?</p>
+                <div class="email">
+                    <input placeholder="your email" type="text">
+                    <a href="#" class="btn-link">
+                        <button class="btn">
+                            Subscribe
+                            <ion-icon name="arrow-forward"></ion-icon>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-banner">
+            <span class="copyright">© Copyright 2023</span>
+            <a href="#" class="design-by">design by amardeep kr</a>
+            <span class="reserved">All Rights Reserved</span>
+        </div>
+        </div>
+    </footer>
+    <!-- =============================================
+                    FOOTER SECTION END
+    =============================================== -->
+    
+    <!-- =============================================
+                    Scroll SECTION 
+    =============================================== -->
+    <a href="#" class="scroll-up">
+        <ion-icon name="chevron-up-sharp"></ion-icon>
+    </a>
+
+
+    
+    <!-- =============================================
+                    JavaScript link
+    =============================================== -->
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

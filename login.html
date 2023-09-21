@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./Header.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./utility.css">
+    <title>Log in Page</title>
+  </head>
+  <body>
+    <!-- =============================================
+                    HEADER SECTION START
+    =============================================== -->
+
+    <header class="header">
+      <div class="container home">
+        <div class="logo">
+          <a href="./index.html"><img src="./img/logo_1.jpg" alt="logo" />UCB</a>
+        </div>
+        <div class="menu-overlay"></div>
+        <nav class="navbar">
+          <button class="close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="outer-link" href="./index.html">Home</a>
+            </li>
+            <li class="menu-item down-menu">
+              <a class="outer-link" data-toggle="sub-menu" href="#">
+                Admission
+                <ion-icon
+                  class="down-arow"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </a>
+              <ul class="sub-menu admis">
+                <li class="inner-link">
+                  <a href="#">Student login</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Admin login</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Collage login</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Application & Regis..</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a class="outer-link" href="#">Gallery</a>
+            </li>
+            <li class="menu-item down-menu">
+              <a class="outer-link" data-toggle="sub-menu" href="#">
+                Examination
+                <ion-icon
+                  class="down-arow"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </a>
+              <ul class="sub-menu">
+                <li class="inner-link">
+                  <a href="#">Exam Notification</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Rule & Regulation</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Result</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item down-menu">
+              <a class="outer-link" data-toggle="sub-menu" href="#">
+                News & event
+                <ion-icon
+                  class="down-arow"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </a>
+              <ul class="sub-menu">
+                <li class="inner-link">
+                  <a href="#">Notification</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">News & Update</a>
+                </li>
+                <li class="inner-link">
+                  <a href="#">Time Table</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <div class="menu-overlay"></div> -->
+          </ul>
+        </nav>
+        <div class="btn-ham">
+          <a href="./Contactus.html" class="btn-link">
+            <button class="btn">Contact Us</button>
+          </a>
+          <button class="hamburger">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="opacity show"></div>
+    </header>
+
+    <!-- =============================================
+                    HEADER SECTION END
+    =============================================== -->
+
+    <!-- =============================================
+                    LOGIN SECTION START
+    =============================================== -->
+
+    <section class="login-section">
+      <div class="container stu-portal">
+        <div class="login-left">
+          <div class="heading">
+            <h1>student <span>portal</span></h1>
+            <p>welcome back! Log in to your account</p>
+          </div>
+          <div class="login-img">
+            <img src="./img/login-img.png" alt="login-img" />
+          </div>
+        </div>
+
+        <div class="login-right">
+          <div class="login-info">
+            <div class="stu-logo">
+              <img src="./img/student.png" alt="stu-login-logo" />
+            </div>
+
+            <h3>Log in</h3>
+            <span class="hea-slo">to your account</span>
+
+            <form class="login-card-form">
+              <div class="stu-id">
+                <div class="user-in user-id">
+                  <input type="text" placeholder="User ID" />
+                  <ion-icon name="person-sharp"></ion-icon>
+                </div>
+                <div class="user-in user-pass">
+                  <input type="text" placeholder="Password" />
+                  <ion-icon name="lock-closed"></ion-icon>
+                </div>
+              </div>
+
+              <div class="rem-forget">
+                <div class="pass-rem">
+                  <input type="checkbox" id="rememberCheckbox" />
+                  <label for="rememberCheckbox">Remember me</label>
+                </div>
+                <div class="pass-forget">
+                  <a href="#">I forget my password!</a>
+                </div>
+              </div>
+
+              <button class="login-btn" type="submit">log in</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- BG COLOR DESIGN -->
+      <span class="login-bg-red"></span>
+      <span class="login-bg-purple"></span>
+      <span class="login-bg-cyan"></span>
+
+      <span class="login-bg-purple-1"></span>
+      <span class="login-bg-cyan-1"></span>
+    </section>
+
+    <!-- =============================================
+                      LOGIN SECTION END
+    =============================================== -->
+
+    <script src="./script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+
+/* <! -- =============================================
+                   FIRST BUTTON
+=============================================== --> */
+
+.btn-link {
+    display: inline-flex;
+    background-color: #F66962;
+    padding: 1.1rem 2.3rem;
+    border-radius: .7rem;
+    cursor: pointer;
+    border: 1px solid var(--main-color);
+    transition: .3s ease-in-out;
+}
+
+.btn-link .btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btn-link .btn ion-icon{
+    margin-left: 1rem;
+}
+
+.btn-link:hover {
+    background-color: white;
+}
+
+.btn-link:hover .btn {
+    color: #F66962;
+}
+
+/* <! -- =============================================
+                  SECOND BUTTON
+=============================================== --> */
+
+.btns {
+    background-color: white;
+    border: .1rem solid var(--main-color);
+    transition: .3s ease-in-out;
+}
+
+.btns .btn {
+    color: #F66962 !important;
+    display: flex;
+    align-items: center;
+}
+.btns .btn ion-icon{
+    margin-left: 1rem;
+}
+
+.btns::before {
+    background-color: #F66962 !important;
+}
+
+.btns:hover {
+    background-color: #F66962;
+}
+
+.btns:hover .btn {
+    color: white !important;
+}
+
+ /* SOCIAL MEDIA REUSE DESIGN  */
+.social-media{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+
+}
+.social-media ion-icon{
+    width: 3rem;
+    height: 3rem;
+    color: var(--text-color);
+    transition: all .3s ease;
+}
+.social-media ion-icon:hover{
+    color: var(--main-color);
+}
+
+
+/* Scroll up Button  */
+.scroll-up{
+    position: fixed;
+    bottom: 1.6rem;
+    right: 3.2rem;
+    background: var(--main-color);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 999;
+}
+.scroll-up.active{
+    opacity: 1;
+    bottom: 3.2rem;
+    pointer-events: auto;
+}

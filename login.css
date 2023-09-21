@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #212429;
+    /* overflow: hidden; */
+}
+
+body.hidden-scrolling {
+    overflow-y: hidden;
+}
+
+:root {
+    --bg-cyan: #C1F5FF;
+    --bg-d-purpal: #BC60F6;
+    --bg-purpal: #EDD0FF;
+    --main-color: #F66962;
+    --text-color: #212429;
+    --para-gray: #ACB5BD;
+
+    --gradient: linear-gradient(135deg, hsl(190, 100%, 92%) 0%, hsl(4, 100%, 88%) 50%, hsl(278, 100%, 93%) 100%);
+
+    --big-text: 5rem;
+    --h2-text: 3.8rem;
+    --h3-text: 2.8rem;
+    --h4-text: 2.1rem;
+    --para-text: 1.7rem;
+    --small-capti: 1.6rem;
+    --to-small-cap: 1.2rem;
+
+    --title-lh: 6rem;
+    --sub-lh: 4.94rem;
+    --para-lh: 2.55rem;
+
+    --ff-inter: 'Inter', sans-serif;
+    --ff-poppins: 'Roboto', sans-serif;
+    --ff-Mulish: 'Mulish', sans-serif;
+
+}
+
+h1 {
+    font-size: 4.9rem;
+    font-weight: 800;
+    line-height: 5.9rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 3.9rem;
+    font-weight: 700;
+    line-height: 4.68rem;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 3.1rem;
+    font-weight: 600;
+    line-height: 4rem;
+    font-family: 'Inter', sans-serif;
+    color: #212429;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-family: 'Mulish', sans-serif;
+    text-transform: capitalize;
+}
+
+
+/* <! -- =============================================
+                  LOGIN-SECTION START
+=============================================== --> */
+
+.login-section{
+    padding: 6rem 0;
+}
+.login-section .stu-portal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: white;
+    padding: 3rem 4rem;
+    border-radius: 1.4rem;
+    box-shadow: 0px 14px 40px rgba(246, 105, 98, 0.1);
+}
+.stu-portal .login-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    gap: 6.4rem;
+    justify-content: center;
+    padding-left: 2rem;
+    height: 47rem;
+    background: linear-gradient(145.52deg, #FFADA8 3.72%, #F66962 80.27%); 
+    clip-path: circle(31vw at 18% 50%);
+}
+.stu-portal .login-left .heading{
+    display: flex;
+    flex-direction: column;
+}
+.stu-portal .login-left .heading h1{
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+.stu-portal .login-left .heading h1 span{
+    color: white;
+}
+.stu-portal .login-left .heading p{
+    color: var(--text-color);
+}
+.stu-portal .login-left .login-img img{
+    width: 100%;
+    max-width: 45rem;
+    height: auto;
+}
+
+.stu-portal .login-right{
+    display: flex;
+    flex: 1 0 50%;
+    justify-content: end;
+    
+}
+.stu-portal .login-right .login-info{
+    position: relative;
+    width: 100%;
+    max-width: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem; 
+}
+.stu-portal .login-right .stu-logo img{
+    width: 6.4rem; 
+    margin-bottom: 2rem; 
+}
+.stu-portal .login-right h3{
+    color: var(--main-color);
+    margin-bottom: .5rem; 
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+.stu-portal .login-right .hea-slo{
+    font-size: 1.6rem;
+    font-family: var(--ff-Mulish);
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+.stu-portal .login-right .login-card-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.stu-portal .login-right .stu-id{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    width: 100%;
+}
+.stu-portal .login-right .stu-id .user-in{
+    position: relative;
+}
+.stu-portal .login-right .stu-id input{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem 1.5rem 6rem;
+    color: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    border: 1px solid var(--main-color);
+}
+.stu-portal .login-right .stu-id ion-icon {
+    position: absolute;
+    top: 50%;
+    left: .8rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translate(50%, -50%);
+}
+.stu-portal .login-right .rem-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--ff-Mulish);
+    font-weight: 600;
+    width: 100%;
+    margin: 2rem 0 3rem 0;
+}
+.stu-portal .login-right .rem-forget .pass-rem{
+    display: flex;
+    gap: .7rem;
+}
+.stu-portal .login-right .rem-forget .pass-rem input{
+    outline: none;
+}
+.stu-portal .login-right .rem-forget .pass-rem label{
+    font-size: 1.28rem;
+}
+.stu-portal .login-right .rem-forget .pass-forget a{
+    font-size: 1.28rem;
+    color: var(--main-color);
+}
+.stu-portal .login-right .login-btn{
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--ff-Mulish);
+    padding: 1rem;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-section::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 53rem;
+    top: 0rem;
+    left: 0;
+    background: linear-gradient(263.02deg, #F66962 0%, #FFADA8 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 54%, 0% 100%);
+    z-index: -1;
+}
+
+
+/* <! -- =============================================
+                  RESPONSIVE DESIGN
+=============================================== --> */
+
+@media only screen and (max-width: 1150px){
+    .stu-portal .login-left{
+        clip-path: circle(30vw at 18% 50%);
+    }
+}
+@media only screen and (max-width: 950px){
+    .login-section .stu-portal{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .stu-portal .login-left{
+        gap: 4.4rem;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+        padding-left: 0;
+        width: 100%;
+        clip-path: circle(43rem at 50% -5%);
+    }
+    .stu-portal .login-right{
+        width: 100%;
+        justify-content: center;
+    }
+    .stu-portal .login-right .login-info{
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        max-width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .login-section .stu-portal{
+        background: none;
+        padding: 0;
+        border-radius: none;
+        box-shadow: none;
+    }
+    .stu-portal .login-left {
+        background: none;
+        clip-path: none;
+    }
+}
