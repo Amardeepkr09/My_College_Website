@@ -765,7 +765,8 @@ header .menu-overlay {
 .main-teacher .director .director-img img {
     width: 100%;
     max-width: 200rem;
-    height: auto;
+    height: 100%;
+    min-height: 40rem;
     object-fit: cover;
     border-radius: 1.5rem;
 }
@@ -1732,7 +1733,10 @@ header .menu-overlay {
         width: 25rem;
         height: 25rem;
     }
-
+    /* MEET OUR TEACHER SECTION  */
+    .main-teacher .director .director-img img {
+        min-height: 21.5rem;
+    }
      /* GUEST BG SECTION RESPONSIVE  */
     .guest-faculty .guest-bg-purpal{
         filter: blur(2rem);
