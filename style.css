@@ -1595,6 +1595,10 @@ header .menu-overlay {
 }
 
 @media only screen and (max-width: 600px){
+    /* HERO SECTION CROUSEL  */
+    .hero-cant .right-side .slider .item-list img {
+        width: 90vw;
+    }
     /* COURSE SECTION RESPONSIVE */
     .cource-cant .all-cource{
         grid-template-columns: repeat(1, 1fr);
